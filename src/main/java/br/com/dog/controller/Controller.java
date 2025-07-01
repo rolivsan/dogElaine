@@ -25,11 +25,18 @@ public class Controller {
         List<CachorroDTORequest> cachorroList = cachorroService.getAllDogs();
         return ResponseEntity.ok(cachorroList);
     }
+
     @GetMapping("/{id}")
     public ResponseEntity<CachorroDTORequest> getByIdDog(@PathVariable Long id) {
         CachorroDTORequest cachorro = cachorroService.getByIdDog(id);
         return ResponseEntity.ok(cachorro);
     }
 
+    //TODO Elaine para prox aula implementar o metodo de delete que vai deletar da nossa lista de cachorro
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> delete(@PathVariable Long id){
+        //Implementar o código
+        return ResponseEntity.noContent().build();
+    }
 
 }
