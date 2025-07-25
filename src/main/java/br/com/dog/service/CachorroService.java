@@ -23,4 +23,10 @@ public class CachorroService {
         CachorroDTORequest cachorroDTO = cachorroUseCase.getByIdDog(id);
         return cachorroDTO;
     }
+
+    //precisa retornar?? pode ser void?
+    public CachorroDTORequest deleteByIdDog(Long id){
+        CachorroDTORequest cachorroDTO = cachorroUseCase.deleteByIdDog(id);
+        return cachorroDTO;
+    }
 }

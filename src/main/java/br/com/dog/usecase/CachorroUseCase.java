@@ -21,7 +21,12 @@ public class CachorroUseCase {
         Long conta = id -1;
         int index = conta.intValue();
         CachorroDTORequest cachorro = cachorroList.get(index);
-
+        return cachorro ;
+    }
+    public CachorroDTORequest deleteByIdDog(Long id){
+        Long conta = id -1;
+        int index = conta.intValue();
+        CachorroDTORequest cachorro = cachorroList.remove(index);
         return cachorro ;
     }
 }

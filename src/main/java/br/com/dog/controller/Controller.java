@@ -33,10 +33,12 @@ public class Controller {
     }
 
     //TODO Elaine para prox aula implementar o metodo de delete que vai deletar da nossa lista de cachorro
-    @DeleteMapping("/{id}")
-    public ResponseEntity<Void> delete(@PathVariable Long id){
-        //Implementar o código
+    @DeleteMapping("delete/{id}")
+    public ResponseEntity<Void> deleteByIdDog(@PathVariable Long id){
+        CachorroDTORequest cachorro = cachorroService.deleteByIdDog(id);
         return ResponseEntity.noContent().build();
+        // esse retorno esta certo? poderia retornar o nome do cachorro que foi deletado?
+
     }
 
 }

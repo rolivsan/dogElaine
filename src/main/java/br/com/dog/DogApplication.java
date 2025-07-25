@@ -21,8 +21,8 @@ public class DogApplication {
 	public List<CachorroDTORequest> cachorroList(){
 		List<CachorroDTORequest> cachorroList = new ArrayList<>();
 		cachorroList.add(new CachorroDTORequest(1L,"Rex", "Labrador", 5));
-		cachorroList.add(new CachorroDTORequest(2L,"Fido", "Beagle", 3));
-		cachorroList.add(new CachorroDTORequest(3L,"Buddy", "Golden Retriever", 4));
+		cachorroList.add(new CachorroDTORequest(2L,"Mel", "Beagle", 3));
+		cachorroList.add(new CachorroDTORequest(3L,"Bob", "Golden Retriever", 4));
 
 		return cachorroList;
 	}
